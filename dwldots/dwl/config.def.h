@@ -8,7 +8,7 @@ static const int sloppyfocus               = 1;  /* focus follows mouse */
 static const int bypass_surface_visibility = 0;  /* 1 means idle inhibitors will disable idle tracking even if it's surface isn't visible  */
 static const unsigned int borderpx         = 2;  /* border pixel of windows */
 static const float rootcolor[]             = COLOR(0x222222ff);
-static const float bordercolor[]           = COLOR(0x444444ff);
+static const float bordercolor[]           = COLOR(0x222222ff);
 static const float focuscolor[]            = COLOR(0x3c4c24ff);
 static const float urgentcolor[]           = COLOR(0xff8800ff);
 static const int showbar                   = 1; /* 0 means no bar */
@@ -19,9 +19,9 @@ static const float fullscreen_bg[]         = {0.0f, 0.0f, 0.0f, 1.0f}; /* You ca
 
 static uint32_t colors[][3]                = {
        /*               fg          bg          border    */
-       [SchemeNorm] = { 0xbbbbbbff, 0x222222ff, 0x444444ff },
-       [SchemeSel]  = { 0xeeeeeeff, 0x005577ff, 0x005577ff },
-       [SchemeUrg]  = { 0,          0,          0x770000ff },
+       [SchemeNorm] = { 0xffffffff, 0x222222ff, 0x444444ff },
+       [SchemeSel]  = { 0xffffffff, 0x3c4c24ff, 0x3c4c24ff },
+       [SchemeUrg]  = { 0,          0,          0xff8800ff },
 };
 
 /* tagging  */
@@ -172,6 +172,7 @@ static const Key keys[] = {
 	TAGKEYS(          XKB_KEY_8, XKB_KEY_asterisk,                   7),
 	TAGKEYS(          XKB_KEY_9, XKB_KEY_parenleft,                  8),
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_E,          quit,           {0} },
+
 
 	/* Ctrl-Alt-Backspace and Ctrl-Alt-Fx used to be handled by X server */
 	{ WLR_MODIFIER_CTRL|WLR_MODIFIER_ALT,XKB_KEY_Terminate_Server, quit, {0} },
