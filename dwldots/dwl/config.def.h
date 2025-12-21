@@ -67,7 +67,6 @@ static const struct xkb_rule_names xkb_rules = {
 	/* example:
 	.options = "ctrl:nocaps",
 	*/
-	.options = "",
 	.layout = "gb",
 };
 
@@ -163,8 +162,8 @@ static const Key keys[] = {
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_less,       tagmon,         {.i = WLR_DIRECTION_LEFT} },
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_greater,    tagmon,         {.i = WLR_DIRECTION_RIGHT} },
 	TAGKEYS(          XKB_KEY_1, XKB_KEY_exclam,                     0),
-	TAGKEYS(          XKB_KEY_2, XKB_KEY_at,                         1),
-	TAGKEYS(          XKB_KEY_3, XKB_KEY_numbersign,                 2),
+	TAGKEYS(          XKB_KEY_2, XKB_KEY_quotedbl,                   1),
+	TAGKEYS(          XKB_KEY_3, XKB_KEY_sterling,                   2),
 	TAGKEYS(          XKB_KEY_4, XKB_KEY_dollar,                     3),
 	TAGKEYS(          XKB_KEY_5, XKB_KEY_percent,                    4),
 	TAGKEYS(          XKB_KEY_6, XKB_KEY_asciicircum,                5),

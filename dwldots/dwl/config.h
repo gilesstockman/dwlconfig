@@ -7,8 +7,8 @@
 static const int sloppyfocus               = 1;  /* focus follows mouse */
 static const int bypass_surface_visibility = 0;  /* 1 means idle inhibitors will disable idle tracking even if it's surface isn't visible  */
 static const unsigned int borderpx         = 2;  /* border pixel of windows */
-static const float rootcolor[]             = COLOR(0x1f1003ff);
-static const float bordercolor[]           = COLOR(0x1f1003ff);
+static const float rootcolor[]             = COLOR(0x222222ff);
+static const float bordercolor[]           = COLOR(0x222222ff);
 static const float focuscolor[]            = COLOR(0x3c4c24ff);
 static const float urgentcolor[]           = COLOR(0xff8800ff);
 static const int showbar                   = 1; /* 0 means no bar */
@@ -67,7 +67,6 @@ static const struct xkb_rule_names xkb_rules = {
 	/* example:
 	.options = "ctrl:nocaps",
 	*/
-	.options = "",
 	.layout = "gb",
 };
 
@@ -163,8 +162,8 @@ static const Key keys[] = {
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_less,       tagmon,         {.i = WLR_DIRECTION_LEFT} },
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_greater,    tagmon,         {.i = WLR_DIRECTION_RIGHT} },
 	TAGKEYS(          XKB_KEY_1, XKB_KEY_exclam,                     0),
-	TAGKEYS(          XKB_KEY_2, XKB_KEY_at,                         1),
-	TAGKEYS(          XKB_KEY_3, XKB_KEY_numbersign,                 2),
+	TAGKEYS(          XKB_KEY_2, XKB_KEY_quotedbl,                   1),
+	TAGKEYS(          XKB_KEY_3, XKB_KEY_sterling,                   2),
 	TAGKEYS(          XKB_KEY_4, XKB_KEY_dollar,                     3),
 	TAGKEYS(          XKB_KEY_5, XKB_KEY_percent,                    4),
 	TAGKEYS(          XKB_KEY_6, XKB_KEY_asciicircum,                5),
